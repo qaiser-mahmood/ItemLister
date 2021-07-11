@@ -28,6 +28,21 @@ function removeItem(e) {
         }
     }
 }
+filter.addEventListener("keyup", filterItems);
+function filterItems(e) {
+    const filterText = e.target.value.toLowerCase().trim();
+    const liItems = document.querySelectorAll("#items li");
+    liItems.forEach((liItem) => {
+        var _a, _b;
+        const itemText = (_b = (_a = liItem.firstChild) === null || _a === void 0 ? void 0 : _a.textContent) === null || _b === void 0 ? void 0 : _b.toLowerCase().trim();
+        if ((itemText === null || itemText === void 0 ? void 0 : itemText.indexOf(filterText)) !== -1) {
+            liItem.style.display = "block";
+        }
+        else {
+            liItem.style.display = "none";
+        }
+    });
+}
 window.onload = function () {
     const keys = Object.keys(localStorage);
     const liList = [];
