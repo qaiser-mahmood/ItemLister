@@ -1,5 +1,5 @@
-import { LiItem } from "./classes/LiItem.js";
-import { ListTemplate } from "./classes/ListTemplate.js";
+import { LiItem } from "./classes/LiItem";
+import { ListTemplate } from "./classes/ListTemplate";
 
 const form = document.querySelector("#addForm") as HTMLFormElement;
 const items = document.querySelector("#items") as HTMLUListElement;
