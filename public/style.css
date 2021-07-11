@@ -1,0 +1,12 @@
+#result {
+  background-color: green;
+  color: white;
+}
+.dark-bg {
+  background-color: rgb(223, 219, 219);
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
